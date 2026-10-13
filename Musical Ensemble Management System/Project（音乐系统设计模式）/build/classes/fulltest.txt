@@ -1,0 +1,123 @@
+@echo off
+echo ============================================
+echo    MEMS Full Automated Test
+echo ============================================
+echo.
+
+cd /d "C:\Users\user\Desktop\Project\src"
+
+(
+REM 1. Create ensemble an orchestra
+echo c
+echo o
+echo E001
+echo SYO
+
+REM 2. Add musicians to the orchestra ensemble
+echo a
+echo m001, Chole Chua
+echo 1
+echo a
+echo m002, Mischa Maisky
+echo 2
+
+REM 3. Show the current ensemble
+echo se
+
+REM 4. Create ensemble a jazz band and display all ensembles
+echo c
+echo j
+echo E102
+echo BLUE NOTE
+echo sa
+
+REM 5. Add musicians to the jazz band ensemble
+echo a
+echo m101, Herbie Hancock
+echo 1
+echo a
+echo m102, John Coltrane
+echo 2
+echo a
+echo m103, Buddy Rich
+echo 3
+
+REM 6. Show the current ensemble
+echo se
+
+REM 7. Set the current ensemble by Ensemble ID
+echo s
+echo E001
+
+REM 8. Display all ensembles
+echo sa
+
+REM 9. Add musician
+echo a
+echo m003, Joshua Bell
+echo 1
+echo se
+
+REM 10. Modify musician's instrument
+echo m
+echo m001
+echo 2
+echo se
+
+REM 11. Delete musician
+echo d
+echo m001
+echo se
+
+REM 12. Change the name of the current ensemble
+echo cn
+echo HSO
+echo se
+
+REM 13. Show undo/redo list
+echo l
+
+REM 14. UNDO actions in UNDO list (multiple undos)
+echo u
+echo se
+echo u
+echo se
+echo u
+echo se
+echo u
+echo se
+echo u
+echo se
+echo u
+echo se
+echo u
+echo se
+echo u
+echo se
+echo u
+echo se
+
+REM Try to set to deleted ensemble
+echo s
+echo E102
+
+REM Show undo/redo list again
+echo l
+
+REM 15. REDO actions in REDO list
+echo r
+echo r
+echo se
+echo l
+
+REM Exit
+echo x
+) | java MEMS
+
+echo.
+echo ============================================
+echo    Full Test Completed!
+echo ============================================
+echo.
+echo Note: Compare the output with the expected results in the assignment.
+pause

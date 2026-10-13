@@ -1,0 +1,68 @@
+c
+o
+E001
+SYO
+a
+m001, Chole Chua
+1
+a
+m002, Mischa Maisky
+2
+se
+c
+j
+E102
+BLUE NOTE
+sa
+a
+m101, Herbie Hancock
+1
+a
+m102, John Coltrane
+2
+a
+m103, Buddy Rich
+3
+se
+s
+E001
+sa
+a
+m003, Joshua Bell
+1
+se
+m
+m001
+2
+se
+d
+m001
+se
+cn
+HSO
+se
+l
+u
+se
+u
+se
+u
+se
+u
+se
+u
+se
+u
+se
+u
+se
+u
+se
+s
+E102
+l
+r
+r
+se
+l
+x
